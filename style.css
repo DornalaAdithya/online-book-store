@@ -92,3 +92,22 @@ nav a:hover {
     background-position: 200% center;
   }
 }
+header, nav, main {
+  margin-bottom: 2.4rem;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#bestsellers{
+  margin: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.bscard{
+  background-color: blanchedalmond;
+  height: 350px;
+  width: 380px;
+}
