@@ -92,22 +92,56 @@ nav a:hover {
     background-position: 200% center;
   }
 }
-header, nav, main {
+header,
+nav,
+main {
   margin-bottom: 2.4rem;
 }
-main{
+main {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-#bestsellers{
+#bestsellers {
   margin: 50px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.bscard{
+.bscard {
   background-color: blanchedalmond;
-  height: 350px;
-  width: 380px;
+  height: 400px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 8%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.bscard img{
+  height: 250px;
+  width: 170px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.bscard button{
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+  font-size: 18px;
+  border-radius: 10px;
+}
+.bscard button:hover{
+  opacity: 0.85;
+}
+.bscard h2{
+  text-align: center;
+  font-size: 19px;
+  font-weight: bolder;
 }
