@@ -56,10 +56,10 @@ nav {
   padding-left: 10px;
   gap: 30px;
 }
-nav h2,
-div {
+nav div {
   display: inline-block;
 }
+
 nav h2 {
   padding: 10px 20px;
 }
@@ -98,9 +98,15 @@ main {
   margin-bottom: 2.4rem;
 }
 main {
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+main h2{
+  text-align: left;
+  padding-left: 50px;
+  font-size: 3rem;
 }
 #bestsellers {
   margin: 50px;
@@ -119,13 +125,13 @@ main {
   border-radius: 8%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
-.bscard img{
+.bscard img {
   height: 250px;
   width: 170px;
   border-radius: 12px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.bscard button{
+.bscard button {
   border: none;
   outline: 0;
   padding: 12px;
@@ -137,11 +143,58 @@ main {
   font-size: 18px;
   border-radius: 10px;
 }
-.bscard button:hover{
+.bscard button:hover {
   opacity: 0.85;
 }
-.bscard h2{
+.bscard h2 {
   text-align: center;
   font-size: 19px;
   font-weight: bolder;
+}
+#hero {
+  width: 100%;
+  height: 68vh;
+  background: url("book images/lib2.jpg") no-repeat center center/cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 8px;
+}
+.hero-content p {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+.hero-content button {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  background-color: rgba(164, 38, 38, 0.871);
+  cursor: pointer;
+  color: white;
+  transition: transform 0.2s ease , opacity  0.2s ease;
+  font-size: 24px;
+}
+.hero-content button:hover{
+  transform: scale(1.05);
+  opacity: 0.92;
 }
