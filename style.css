@@ -129,6 +129,7 @@ main h2{
   height: 250px;
   width: 170px;
   border-radius: 12px;
+  object-fit: cover;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .bscard button {
