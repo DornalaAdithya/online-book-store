@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyCart</title>
+    <link rel="stylesheet" href="mycartStyle.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Online Book Store</h1>
+      <div class="marquee">
+        <p>Buy 2 books and get the 3rd one free</p>
+      </div>
+    </header>
+    <nav>
+      <h2 id="eBook">eBook.com</h2>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="bookcat.html">Book Categories</a>
+        <a href="livesale.html" id="lvs">Live Sale</a>
+        <a href="mycart.html">My Cart</a>
+        <a href="cntus.html">Contact us</a>
+      </div>
+    </nav>
+    <div id="mycart">
+      <h1>My Cart</h1>
+      <table
+        id="cartTable"
+        align="center"
+        border="1"
+        cellspacing="0"
+        cellpadding="8"
+      >
+        <thead>
+          <tr>
+            <th>Book Name</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody id="cartBody"></tbody>
+        <tfoot>
+          <tr>
+            <td class="total">Total</td>
+            <td class="total" id="totalprice">0.0</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

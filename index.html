@@ -33,7 +33,7 @@
       <div class="hero-content">
         <h1>Find Your Next Favorite Book</h1>
         <p>Dive into thousands of titles across genres</p>
-        <button>Shop Now</button>
+        <button onclick="window.location.href='bookcat.html'">Shop Now</button>
       </div>
     </section>
     <main>
@@ -41,21 +41,28 @@
       <div id="bestsellers">
         <div class="bscard">
           <img src="book images/fantasy/harrypoter.jpg" alt="book image" />
-          <h2>Harry Potter and the Sorcerer’s Stone — J.K. Rowling</h2>
-          <button>add cart</button>
+          <h3>Harry Potter and the Sorcerer’s Stone</h3>
+          <button
+            onclick="addToCart('Harry Potter and the Sorcerer’s Stone', 250);"
+          >
+            add cart
+          </button>
         </div>
         <div class="bscard">
           <img src="book images/myst/tdc.jpg" alt="book image" />
-          <h2>The Da Vinci Code — Dan Brown</h2>
-          <button>add cart</button>
+          <h3>The Da Vinci Code</h3>
+          <button onclick="addToCart('The Da Vinci Code', 300);">
+            add cart
+          </button>
         </div>
         <div class="bscard">
           <img src="book images/rmn/MBY.jpg" alt="book image" />
-          <h2>Me Before You — Jojo Moyes</h2>
-          <button>add cart</button>
+          <h3>Me Before You</h3>
+          <button onclick="addToCart('Me Before You', 280);">add cart</button>
         </div>
       </div>
     </main>
     <footer></footer>
+    <script src="script.js"></script>
   </body>
 </html>

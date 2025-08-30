@@ -6,6 +6,7 @@
     <title>BOOKS CATALOG</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="bookstyle.css" />
+    <script src="mycart.js" defer></script>
   </head>
   <body>
     <header>
@@ -28,151 +29,197 @@
 
     <div id="catnav">
       <h1>Categories</h1>
-
       <div class="types">
-        <a href="#fantacy">Fantacy</a>
+        <a href="#fantacy">Fantasy</a>
         <a href="#sci-fi">Science Fiction</a>
         <a href="#mystery">Mystery</a>
         <a href="#romance">Romance</a>
-        <a href="#non-sci-fi">Non-Fiction (Biography / Self-Help / History)</a>
+        <a href="#non-sci-fi">Non-Fiction</a>
       </div>
 
       <div id="allcat">
         <div class="dispcat" id="fantacy">
-          <h2>Fantacy</h2>
+          <h2>Fantasy</h2>
           <div class="cards">
             <div class="card">
-              <img src="book images/fantasy/harrypoter.jpg" alt="Harry Potter" />
-              <h3>Harry Potter</h3>
-              <button>Add to Cart</button>
+              <img
+                src="book images/fantasy/harrypoter.jpg"
+                alt="Harry Potter"
+              />
+              <h3>Harry Potter and the Sorcerer’s Stone</h3>
+              <button
+                onclick="addToCart('Harry Potter and the Sorcerer’s Stone', 250)"
+              >
+                Add to Cart
+              </button>
             </div>
             <div class="card">
               <img src="book images/fantasy/got.jpg" alt="Game of Thrones" />
               <h3>Game of Thrones</h3>
-              <button>Add to Cart</button>
+              <button onclick="addToCart('Game of Thrones', 350)">
+                Add to Cart
+              </button>
             </div>
             <div class="card">
               <img src="book images/fantasy/hoobit.jpg" alt="The Hobbit" />
               <h3>The Hobbit</h3>
-              <button>Add to Cart</button>
+              <button onclick="addToCart('The Hobbit', 280)">
+                Add to Cart
+              </button>
             </div>
             <div class="card">
               <img src="book images/fantasy/pj.jpg" alt="Percy Jackson" />
               <h3>Percy Jackson</h3>
-              <button>Add to Cart</button>
+              <button onclick="addToCart('Percy Jackson', 270)">
+                Add to Cart
+              </button>
             </div>
           </div>
         </div>
 
-        <!-- Science Fiction -->
         <div class="dispcat" id="sci-fi">
           <h2>Science Fiction</h2>
           <div class="cards">
             <div class="card">
-              <img src="book images/sci-fi/af.jpg" alt="AF" />
+              <img src="book images/sci-fi/af.jpg" alt="Artificial Future" />
               <h3>Artificial Future (AF)</h3>
-              <button>Add to Cart</button>
+              <button onclick="addToCart('Artificial Future (AF)', 220)">
+                Add to Cart
+              </button>
             </div>
             <div class="card">
               <img src="book images/sci-fi/dune.jpg" alt="Dune" />
               <h3>Dune</h3>
-              <button>Add to Cart</button>
+              <button onclick="addToCart('Dune', 320)">Add to Cart</button>
             </div>
             <div class="card">
               <img src="book images/sci-fi/neur.jpg" alt="Neuromancer" />
               <h3>Neuromancer</h3>
-              <button>Add to Cart</button>
+              <button onclick="addToCart('Neuromancer', 280)">
+                Add to Cart
+              </button>
             </div>
             <div class="card">
               <img src="book images/sci-fi/osc.jpg" alt="OSC" />
               <h3>OSC</h3>
-              <button>Add to Cart</button>
+              <button onclick="addToCart('OSC', 240)">Add to Cart</button>
             </div>
           </div>
         </div>
 
-        <!-- Mystery -->
         <div class="dispcat" id="mystery">
           <h2>Mystery</h2>
           <div class="cards">
             <div class="card">
               <img src="book images/myst/gg.jpg" alt="Gone Girl" />
               <h3>Gone Girl</h3>
-              <button>Add to Cart</button>
+              <button onclick="addToCart('Gone Girl', 250)">Add to Cart</button>
             </div>
             <div class="card">
-              <img src="book images/myst/moe.jpg" alt="Murder on the Orient Express" />
+              <img
+                src="book images/myst/moe.jpg"
+                alt="Murder on the Orient Express"
+              />
               <h3>Murder on the Orient Express</h3>
-              <button>Add to Cart</button>
+              <button onclick="addToCart('Murder on the Orient Express', 270)">
+                Add to Cart
+              </button>
             </div>
             <div class="card">
               <img src="book images/myst/tdc.jpg" alt="The Da Vinci Code" />
               <h3>The Da Vinci Code</h3>
-              <button>Add to Cart</button>
+              <button onclick="addToCart('The Da Vinci Code', 300)">
+                Add to Cart
+              </button>
             </div>
             <div class="card">
-              <img src="book images/myst/tgd.jpg" alt="The Girl with the Dragon Tattoo" />
+              <img
+                src="book images/myst/tgd.jpg"
+                alt="The Girl with the Dragon Tattoo"
+              />
               <h3>The Girl with the Dragon Tattoo</h3>
-              <button>Add to Cart</button>
+              <button
+                onclick="addToCart('The Girl with the Dragon Tattoo', 280)"
+              >
+                Add to Cart
+              </button>
             </div>
           </div>
         </div>
 
-        <!-- Romance -->
         <div class="dispcat" id="romance">
           <h2>Romance</h2>
           <div class="cards">
             <div class="card">
-              <img src="book images/rmn/itendswithus.jpg" alt="It Ends With Us" />
+              <img
+                src="book images/rmn/itendswithus.jpg"
+                alt="It Ends With Us"
+              />
               <h3>It Ends With Us</h3>
-              <button>Add to Cart</button>
+              <button onclick="addToCart('It Ends With Us', 300)">
+                Add to Cart
+              </button>
             </div>
             <div class="card">
               <img src="book images/rmn/MBY.jpg" alt="Me Before You" />
               <h3>Me Before You</h3>
-              <button>Add to Cart</button>
+              <button onclick="addToCart('Me Before You', 200)">
+                Add to Cart
+              </button>
             </div>
             <div class="card">
               <img src="book images/rmn/p&p.jpg" alt="Pride and Prejudice" />
               <h3>Pride and Prejudice</h3>
-              <button>Add to Cart</button>
+              <button onclick="addToCart('Pride and Prejudice', 250)">
+                Add to Cart
+              </button>
             </div>
             <div class="card">
               <img src="book images/rmn/TN.jpg" alt="The Notebook" />
               <h3>The Notebook</h3>
-              <button>Add to Cart</button>
+              <button onclick="addToCart('The Notebook', 220)">
+                Add to Cart
+              </button>
             </div>
           </div>
         </div>
 
-        <!-- Non-Fiction -->
         <div class="dispcat" id="non-sci-fi">
           <h2>Non-Fiction (Biography / Self-Help / History)</h2>
           <div class="cards">
             <div class="card">
               <img src="book images/non-sci-fi/7.jpg" alt="The 7 Habits" />
               <h3>The 7 Habits of Highly Effective People</h3>
-              <button>Add to Cart</button>
+              <button
+                onclick="addToCart('The 7 Habits of Highly Effective People', 280)"
+              >
+                Add to Cart
+              </button>
             </div>
             <div class="card">
               <img src="book images/non-sci-fi/educated.jpg" alt="Educated" />
               <h3>Educated</h3>
-              <button>Add to Cart</button>
+              <button onclick="addToCart('Educated', 300)">Add to Cart</button>
             </div>
             <div class="card">
-              <img src="book images/non-sci-fi/steve jobs.jpg" alt="Steve Jobs" />
+              <img
+                src="book images/non-sci-fi/steve jobs.jpg"
+                alt="Steve Jobs"
+              />
               <h3>Steve Jobs</h3>
-              <button>Add to Cart</button>
+              <button onclick="addToCart('Steve Jobs', 320)">
+                Add to Cart
+              </button>
             </div>
             <div class="card">
               <img src="book images/non-sci-fi/sapiens.jpg" alt="Sapiens" />
               <h3>Sapiens</h3>
-              <button>Add to Cart</button>
+              <button onclick="addToCart('Sapiens', 350)">Add to Cart</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- ✅ closed catnav -->
+    <script src="script.js"></script>
   </body>
 </html>

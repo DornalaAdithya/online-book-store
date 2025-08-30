@@ -1,8 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Roboto Condensed";
 }
 body {
   background: linear-gradient(
@@ -97,61 +99,6 @@ nav,
 main {
   margin-bottom: 2.4rem;
 }
-main {
-  padding-top: 30px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-main h2{
-  text-align: left;
-  padding-left: 50px;
-  font-size: 3rem;
-}
-#bestsellers {
-  margin: 50px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.bscard {
-  background-color: blanchedalmond;
-  height: 400px;
-  width: 280px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  border-radius: 8%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-}
-.bscard img {
-  height: 250px;
-  width: 170px;
-  border-radius: 12px;
-  object-fit: cover;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-.bscard button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 50%;
-  font-size: 18px;
-  border-radius: 10px;
-}
-.bscard button:hover {
-  opacity: 0.85;
-}
-.bscard h2 {
-  text-align: center;
-  font-size: 19px;
-  font-weight: bolder;
-}
 #hero {
   width: 100%;
   height: 68vh;
@@ -192,10 +139,74 @@ main h2{
   background-color: rgba(164, 38, 38, 0.871);
   cursor: pointer;
   color: white;
-  transition: transform 0.2s ease , opacity  0.2s ease;
+  transition: transform 0.2s ease, opacity 0.2s ease;
   font-size: 24px;
 }
-.hero-content button:hover{
+.hero-content button:hover {
   transform: scale(1.05);
   opacity: 0.92;
+}
+main {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+main h2 {
+  text-align: left;
+  padding-left: 50px;
+  font-size: 3rem;
+}
+#bestsellers {
+  margin: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.bscard {
+  background-color: blanchedalmond;
+  height: 400px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 8%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.bscard h3 {
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  line-height: 1.3;
+}
+.bscard img {
+  height: 250px;
+  width: 170px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.bscard button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+  font-size: 18px;
+  border-radius: 10px;
+}
+.bscard button:hover {
+  opacity: 0.85;
+}
+.bscard h2 {
+  text-align: center;
+  font-size: 19px;
+  font-weight: bolder;
 }

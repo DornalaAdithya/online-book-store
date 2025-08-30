@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed";
+}
 #catnav {
   max-width: 100%;
   display: flex;
@@ -6,7 +12,6 @@
   align-items: center;
   gap: 30px;
 }
-
 .types {
   display: flex;
   justify-content: space-evenly;
@@ -93,14 +98,3 @@
   font-weight: 600;
 }
 .card button:hover { opacity: 0.9; }
-
-/* responsive tweaks
-@media (max-width: 900px) {
-  .card { width: 220px; height: 360px; }
-  .card img { height: 200px; width: 150px; }
-}
-@media (max-width: 600px) {
-  .types { flex-direction: column; gap: 8px; }
-  #allcat { width: 98%; padding: 8px; }
-  .cards { gap: 10px; }
-} */
